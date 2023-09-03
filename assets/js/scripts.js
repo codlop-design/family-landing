@@ -57,3 +57,14 @@ $(document).ready(function() {
     }
   });
 });
+
+
+$(document).on("click", ".nk-header-toggle", function () {
+  $(".nk-body").addClass("header-menu-shown");
+  $(".nk-header-menu").addClass("header-menu-active");
+});
+
+$(document).on("click", ".header-menu-overlay", function () {
+  $(".nk-body").removeClass("header-menu-shown");
+  $(".nk-header-menu").removeClass("header-menu-active");
+});
